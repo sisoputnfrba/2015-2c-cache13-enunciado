@@ -8,4 +8,5 @@
 * [Proceso Administrador de Swap](proceso_administrador_de_swap.md)
 * [Anexo I: Especificación del lenguaje mAnsisOp](anexo_i_especificacion_del_lenguaje_mansisop.md)
 * [Anexo II: Formato de los archivos](anexo_ii_formato_de_los_archivos.md)
+* Descripción de las entregas
 
