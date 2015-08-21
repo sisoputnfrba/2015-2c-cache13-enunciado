@@ -4,5 +4,5 @@
 * [Arquitectura de Caché 13](arquitectura-de-cache-13.md)
 * [Proceso Planificador](proceso_planificador.md)
 * [Proceso CPU](proceso_cpu.md)
-* Proceso Administrador de Memoria
+* [Proceso Administrador de Memoria](proceso_administrador_de_memoria.md)
 
