@@ -2,4 +2,5 @@
 
 * [Introduction](README.md)
 * [Arquitectura de Caché 13](arquitectura-de-cache-13.md)
+* Proceso Planificador
 
