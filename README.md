@@ -1,4 +1,5 @@
-My Awesome Book
-=======
+**Cache 13** tiene por objetivo profundizar en los conceptos relacionados a la planificación de procesos y a la utilización de memoria virtual en un Sistema Operativo tradicional, implementado con paginación por demanda. El mismo permitirá ejecutar sentencias sencillas de diferentes procesos. El orden de ejecución será determinado por un planificador de corto plazo que, basándose en diferentes algoritmos, seleccionará al siguiente proceso. La ejecución de estas sentencias requerirá de diferentes accesos a memoria. Estos accesos serán realizados teniendo en mente todos los conceptos aprendidos durante clase. 
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+Para que el desarrollo del Trabajo Práctico coincida con el orden en que se dan los temas de la materia, los diferentes checkpoints fueron cuidadosamente confeccionados para evitar retrabajo. Recomendamos fuertemente a todos los grupos respetar este orden. Los requisitos indicados son los **mínimos** para considerar el checkpoint aprobado, pero es una excelente práctica seguir avanzando.
+
+Para mejor comprensión de la terminología, se colocarán en **negrita** las referencias a los diferentes procesos del TP. Los términos en *itálica* harán referencia a conceptos que fueron o serán vistos durante las clases teóricas.
