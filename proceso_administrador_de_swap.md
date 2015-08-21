@@ -1,0 +1,12 @@
+# Proceso Administrador de Swap
+
+Será el encargado de administrar la *memoria virtual* de “Cache 13”, utilizando un esquema muy sencillo. 
+
+Para ello, al iniciarse, creará un archivo de tamaño <u>configurable</u> (en bytes), el cual representará nuestra *partición de swap*. Ante la llegada de un mensaje de la **CPU** avisando sobre un nuevo proceso, recibirá el archivo con las páginas iniciales de un proceso, y deberá guardarlas en la partición. En caso de no tener espacio suficiente, deberá rechazar el proceso, siendo este finalizado. Cuando la **CPU** informe la finalización de un proceso, deberá borrar las páginas. 
+
+Para que el manejo del espacio libre y ocupado en esta partición sea sencillo, se utilizará un esquema de asignación contigua. La *partición de swap* será considerada inicialmente como un hueco del total de su tamaño, medido en cantidad de páginas que puede alojar. Ante la llegada de un proceso, asignará el tamaño necesario para que este sea guardado, dejando el espacio restante como libre. Esto mismo sucederá con los siguientes procesos puestos en ejecución. Al finalizar un proceso, el espacio que tenía asignado será marcado como libre. En caso de que esto genere dos huecos contiguos, estos se unirán formando un hueco mayor. Para administrar el espacio utilizado se usará una lista enlazada con el identificador del proceso, el byte de comienzo en la partición, y la cantidad de páginas. Para administrar el espacio libre, se utilizará una lista enlazada con el byte de comienzo del hueco y la cantidad de páginas que representa. La unidad mínima de asignación será una página[^6].
+
+Ante un pedido de lectura de página realizado por el **Administrador de Memoria**, este módulo devolverá el contenido de esta página. Ante un pedido de escritura de página, sobreescribirá el contenido de esta página. Por último, cuando la *fragmentación externa*[^7] no permita crear nuevos procesos, se deberá compactar la partición. Todos los pedidos que lleguen mientras dure este procedimiento deberán esperar a que este finalice.
+
+[^6] Para más información sobre asignación contigua, remitirse al capítulo 11 de “Fundamentos de Sistemas Operativos” de Abraham Silberschatz.
+[^7] Es muy importante no confundir la fragmentación externa con la falta de espacio disponible. En el primer caso el espacio está, pero no puede ser asignado por estar fragmentado.
