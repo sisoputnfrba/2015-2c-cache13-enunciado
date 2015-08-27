@@ -1,3 +1,5 @@
+# Introducción
+
 **Cache 13** es un pequeño sistema que emulará el funcionamiento de algunos módulos del Sistema Operativo. El mismo permitirá ejecutar algunos programas a los que llamaremos “mCod”, compuestos de sentencias sencillas. Estos programas en ejecución serán denominados procesos “mProc”. El orden en el cual se ejecutarán estará determinado por un planificador de corto plazo que, basándose en diferentes algoritmos, seleccionará el siguiente proceso a ejecutar. 
 
 La ejecución de estas sentencias requerirá diferentes accesos a memoria, tales como lecturas, escrituras, inicialización y finalización. Estos accesos serán realizados utilizando un administrador de memoria, y requerirán la utilización de todos los conceptos aprendidos durante las clases. 
