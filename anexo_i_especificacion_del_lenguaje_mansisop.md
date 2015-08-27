@@ -20,6 +20,7 @@ El lenguaje deberá soportar las siguientes operaciones:
 ## `entrada-salida T`
 
 - Realizará una *entrada-salida* de tiempo T. La ejecución de esta instrucción provocará que la **CPU** informe al **Planificador** que debe bloquear al proceso “mProc” en ejecución durante T segundos.
+- En caso de recibir varios pedidos, estos serán encolados por el planificador, atendiendo de a uno por vez.
 - Deberá retornar la expresión `mProc X en entrada-salida de tiempo T`.
 - Además, esta instrucción libera la **CPU**.
 

@@ -20,7 +20,7 @@ El algoritmo de planificación a utilizar deberá ser especificado por archivo d
 | `ALGORITMO_PLANIFICACION` | `FIFO`[^4]       |
 | `QUANTUM`                 | `5`              |
 
-El valor de Quantum sólo será utilizado si el algoritmo usado lo requiere.
+El valor de Quantum sólo será utilizado si el algoritmo usado lo requiere. El valor está expresando en sentencias.
 
 [^2] El _Process Control Block (PCB)_ será una estructura de datos que tendrá toda aquella información que el grupo considere necesaria para ejecutar los procesos. La misma deberá ser validada y justificada con los ayudantes asignados, en las diferentes instancias de evaluación.
 [^3] Se considera una _ráfaga_ a un conjunto de instrucciones que ejecuta una CPU en un determinado período de tiempo hasta que finaliza, se bloquea o es interrumpido.

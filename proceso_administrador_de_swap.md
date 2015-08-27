@@ -6,7 +6,7 @@ Para que el manejo del espacio libre y ocupado en esta partición sea sencillo, 
 
 Cuando le sea informada la creación de un nuevo proceso “mProc”, procederá a buscar un hueco donde quepa. En caso de que el espacio total disponible no sea suficiente, deberá rechazar el proceso, siendo su inicialización cancelada. En cambio, cuando la *fragmentación externa*[^19] sea la que no permite crear nuevos procesos, se deberá compactar la partición. Todos los pedidos que lleguen mientras dure este procedimiento deberán esperar a que este finalice. Este procedimiento deberá esperar una cantidad de tiempo <u>configurable</u> (en segundos), simulando el tiempo de compactación.
 
-Ante un pedido de lectura de página realizado por el **Administrador de Memoria**, este módulo devolverá el contenido de esta página. Ante un pedido de escritura de página, sobreescribirá el contenido de esta página. Por último, cuando se le informe la finalización de un proceso, deberá borrarlo de la *partición de swap*.
+Ante un pedido de lectura de página realizado por el **Administrador de Memoria**, este módulo devolverá el contenido de esta página. Ante un pedido de escritura de página, sobreescribirá el contenido de esta página. Ambas operaciones tendrán un retardo configurable. Por último, cuando se le informe la finalización de un proceso, deberá borrarlo de la *partición de swap*.
 
 ## Archivo de Configuración
 
@@ -16,6 +16,7 @@ Ante un pedido de lectura de página realizado por el **Administrador de Memoria
 | `NOMBRE_SWAP`          | `swap.data`      |
 | `CANTIDAD_PAGINAS`     | `512`            |
 | `TAMANIO_PAGINA`       | `256`            |
+| `RETARDO_SWAP`         | `15`            |
 | `RETARDO_COMPACTACION` | `60`[^20]        |
 
 [^16] Se recomienda al alumno investigar sobre la utilización del comando `dd` para crear los archivos.
