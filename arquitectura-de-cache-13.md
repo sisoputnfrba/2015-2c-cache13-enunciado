@@ -1,3 +1,5 @@
+# Arquitectura de Cache 13
+
 El sistema “Cache 13” constará de los siguientes Procesos[^1]:
 
 ![Arquitectura de Cache 13](arquitectura-cache-13.png)
