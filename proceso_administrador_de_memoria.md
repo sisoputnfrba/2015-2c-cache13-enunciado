@@ -16,7 +16,7 @@ Cuando un **CPU** informe el fin de un nuevo proceso “mProc”, el **Administr
 
 Por último, el **Administrador de Memoria**, deberá ser capaz de recibir e interpretar tres *señales* diferentes[^12]. La primera de ellas deberá limpiar completamente la TLB (*TLB flush*), utilizando un hilo correctamente sincronizado para esto, evitando problemas de concurrencia. La segunda señal deberá limpiar completamente la *memoria principal*, actualizando los bits que sean necesarios en las tablas de páginas de los diferentes procesos. Para evitar problemas de concurrencia, aquí también se deberá utilizar un hilo correctamente sincronizado. Por último, la tercera señal deberá realizar un volcado (dump) del contenido de la *memoria principal*, en el archivo log de **Administrador de Memoria**, creando para tal fin un proceso nuevo[^13]. El volcado deberá indicar el número de *marco* y su contenido, utilizando una fila por cada *marco*.
 
-<br/><br/>
+<br/><br/><br/>
 ## Archivo de Configuración
 
 | Nombre de Campo             | Valor de Ejemplo |
