@@ -1,3 +1,5 @@
+# Proceso Planificador
+
 Será el encargado de administrar la ejecución de los procesos “mProc”, permitiendo que estos inicien, ordenándolos para que ejecuten en las distintas **CPUs** y finalizándolos cuando sea necesario. Para ello, utilizará programas “mCod”, que serán puestos en ejecución. 
 
 A partir de que el **Planificador** inicie, deberá mostrar por pantalla una consola, que será capaz de soportar algunos comandos, definidos en el anexo respectivo. Se debe contemplar la posibilidad de ejecutar varios procesos “mProc” concurrentemente (_multiprogramación_), por lo cual la consola deberá estar <u>siempre</u> disponible. Además, el mismo programa “mCod” deberá poder ser ejecutado más de una vez,  generando múltiples procesos “mProc” conviviendo al mismo tiempo en el sistema.
