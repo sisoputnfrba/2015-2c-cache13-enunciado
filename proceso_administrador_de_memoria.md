@@ -1,6 +1,6 @@
 # Proceso Administrador de Memoria
 
-Será el encargado de administrar la memoria del sistema. Soportará *paginación por demanda*, utilizando una *TLB* y una partición de *swap*. Además limitará la cantidad de *marcos* otorgados a cada proceso, siendo esta cantidad <u>configurable</u>, con *asignación fija* y *reemplazo local[^8]*. La asignación de frames a un determinado proceso será efectiva sólo cuando este lo necesite, pudiendo nunca llegar al límite mencionado. Al iniciar, se conectará al Administrador de Swap y quedará a la espera de conexiones de hilos CPU.
+Será el encargado de administrar la memoria del sistema. Soportará *paginación por demanda*, utilizando una *TLB* y una partición de *swap*. Además limitará la cantidad de *marcos* otorgados a cada proceso, siendo esta cantidad <u>configurable</u>, con *asignación fija* y *reemplazo local[^9]*. La asignación de frames a un determinado proceso será efectiva sólo cuando este lo necesite, pudiendo nunca llegar al límite mencionado. Al iniciar, se conectará al Administrador de Swap y quedará a la espera de conexiones de hilos CPU.
 
 El Administrador de Memoria utilizará una estructura en memoria que emulará una única cache TLB, con las columnas que sean necesarias para su buen funcionamiento. Su cantidad de entradas será configurable, y no variará durante la ejecución de este proceso. También se deberá poder deshabilitar el uso de esta cache, con una opción en el archivo de configuración.
 
@@ -16,4 +16,4 @@ Cuando un CPU informe el fin de un nuevo proceso “mProc”, el Administrador d
 
 Por último, el Administrador de Memoria, deberá ser capaz de recibir e interpretar tres señales diferentes. La primera de ellas deberá limpiar completamente la TLB (TLB flush), utilizando un hilo correctamente sincronizado para esto, evitando problemas de concurrencia. La segunda señal deberá limpiar completamente la memoria principal, actualizando los bits que sean necesarios en las tablas de páginas de los diferentes procesos. Para evitar problemas de concurrencia, aquí también se deberá utilizar un hilo correctamente sincronizado. Por último, la tercera señal deberá realizar un volcado (dump) del contenido de la memoria principal, en el archivo log de Administrador de Memoria, creando para tal fin un proceso nuevo. El volcado deberá indicar el número de marco y su contenido, utilizando una fila por cada marco.
 
-[^8] Para más información, referirse al capítulo 9 de “Fundamentos de Sistemas Operativos”, de Abraham Silberschatz.
+[^9] Para más información, referirse al capítulo 9 de “Fundamentos de Sistemas Operativos”, de Abraham Silberschatz.
