@@ -2,6 +2,8 @@
 
 Para permitir una mejor distribución de las tareas y orientar al alumno en el proceso de desarrollo de su trabajo, se definieron una serie de puntos de control y fechas que el alumno podrá utilizar para comparar su grado de avance respecto del esperado. En cada una de estas entregas se otorgará feedback al grupo, para que sepan fehacientemente si su presentación cumple o no con el mínimo estipulado.
 
+En cada checkpoint se explicita una serie de requisitos mínimos que debe tener cada entrega. Dado que la descripción de los componentes del TP enuncia generalidades, es importante que cada grupo esté atento a estos requisitos, que detallan algoritmos y funcionalidades a tener en cuenta, entre otras cosas..
+
 ## Checkpoint 1 - Obligatorio
 
 **Fecha:** 12 de septiembre
