@@ -28,9 +28,11 @@ Por último, el **Administrador de Memoria**, deberá ser capaz de recibir e int
 | `TAMANIO_MARCO`             | `256`            |
 | `ENTRADAS_TLB`              | `4`              |
 | `TLB_HABILITADA`            | `SI`             |
+| `RETARDO_MEMORIA`           | `8`[^14]         |
 
 [^9] Para más información, referirse al capítulo 9 de “Fundamentos de Sistemas Operativos”, de Abraham Silberschatz.
 [^10] Si bien el Trabajo Práctico simplifica este aspecto, recuerde que las tablas de páginas se almacenan en Memoria Principal.
 [^11] Recuerde los pasos del proceso de traducción: búsqueda en TLB, luego (de ser necesario) búsqueda en la tabla de páginas y por último búsqueda del frame correspondiente.
 [^12] Se deberán usar las señales `SIGUSR1`, `SIGUSR2` y `SIGPOLL` para estos tres escenarios.
 [^13] Recomendamos investigar el uso de `fork` y el concepto de “Copy on write”.
+[^14] En segundos
