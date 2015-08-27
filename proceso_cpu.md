@@ -22,14 +22,14 @@ Una vez enviada la información mencionada anteriormente al **Planificador**, vo
 
 ## Archivo de Configuración
 
-| Nombre de Campo | Valor de Ejemplo |
-|:-----:|:-----:|
-| `IP_PLANIFICADOR` | `192.168.101.10` |
-| `PUERTO_PLANIFICADOR` | `4000` |
-| `IP_MEMORIA` | `192.168.101.11` |
-| `PUERTO_MEMORIA` | `5000` |
-| `CANTIDAD_HILOS` | `4` |
-| `RETARDO` | `2000`[^7] |
+| Nombre de Campo       | Valor de Ejemplo |
+|:---------------------:|:----------------:|
+| `IP_PLANIFICADOR`     | `192.168.101.10` |
+| `PUERTO_PLANIFICADOR` | `4000`           |
+| `IP_MEMORIA`          | `192.168.101.11` |
+| `PUERTO_MEMORIA`      | `5000`           |
+| `CANTIDAD_HILOS`      | `4`              |
+| `RETARDO`             | `2000`[^7]       |
 
 [^5] _Hilo_ o _Thread_: traza de ejecución perteneciente a un proceso, susceptible de ser planificada por el sistema operativo. Para más información referirse a la clase teórica asociada.
 [^6] En un Sistema Operativo real, un fallo de página devolvería una excepción que es tratada de forma especial, generando al menos una operación de entrada salida. Por dicho motivo, es habitual bloquear al proceso hasta que la página solicitada esté disponible, permitiendo que otro proceso utilice la CPU.
