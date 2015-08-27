@@ -8,7 +8,18 @@ Cuando le sea informada la creación de un nuevo proceso “mProc”, procederá
 
 Ante un pedido de lectura de página realizado por el **Administrador de Memoria**, este módulo devolverá el contenido de esta página. Ante un pedido de escritura de página, sobreescribirá el contenido de esta página. Por último, cuando se le informe la finalización de un proceso, deberá borrarlo de la *partición de swap*.
 
+## Archivo de Configuración
+
+| Nombre de Campo        | Valor de Ejemplo |
+|:----------------------:|:----------------:|
+| `PUERTO_ESCUCHA`       | `6000`           |
+| `NOMBRE_SWAP`          | `swap.data`      |
+| `CANTIDAD_PAGINAS`     | `512`            |
+| `TAMANIO_PAGINA`       | `256`            |
+| `RETARDO_COMPACTACION` | `60`[^20]        |
+
 [^16] Se recomienda al alumno investigar sobre la utilización del comando `dd` para crear los archivos.
 [^17]  Recuerde que el tamaño de las **páginas** es el mismo que el de los **marcos**.
 [^18] Para más información sobre asignación contigua, remitirse al capítulo 11 de “Fundamentos de Sistemas Operativos” de Abraham Silberschatz.
 [^19] Es muy importante no confundir la *fragmentación externa* con la falta de espacio disponible. En el primer caso el espacio está, pero no puede ser asignado por estar fragmentado.
+[^20] En segundos.
