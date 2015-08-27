@@ -24,7 +24,7 @@ Todos los hilos compartirán el mismo archivo log, prefijando en cada evento el 
 - Solicitud de escritura/lectura recibida, indicando PID y N° de página
 TLB hit/miss, indicando N° de página ingresado, N° de marco resultante, y en caso de miss resultado del algoritmo de reemplazo (si aplica)
 - Acceso a memoria realizado, indicando PID, N° de página y N° de marco
-- Acceso a swapp (fallo de página), indicando PID, resultado del algoritmo de sustitución de páginas, estado inicial y final de las colas y punteros correspondientes (si aplica)
+- Acceso a swap (fallo de página), indicando PID, resultado del algoritmo de sustitución de páginas, estado inicial y final de las colas y punteros correspondientes (si aplica)
 - Señal recibida/tratamiento de señal terminado, indicando tipo y acción a ejecutar.
 
 ## Administrador de Swap
