@@ -4,7 +4,7 @@
 
 La ejecución de estas sentencias requerirá diferentes accesos a memoria, tales como lecturas, escrituras, inicialización y finalización. Estos accesos serán realizados utilizando un administrador de memoria, y requerirán la utilización de todos los conceptos aprendidos durante las clases. 
 
-Esta simulación tiene por objetivo profundizar en los conceptos relacionados a la planificación de procesos y a la utilización de memoria virtual en un Sistema Operativo tradicional, implementado con paginación por demanda. Por ende, algunos de los accesos a memoria, requerirán también accesos a una partición de swap.
+Esta simulación tiene por objetivo profundizar en conceptos relacionados a la planificación de procesos y a la utilización de memoria virtual en un Sistema Operativo tradicional, implementado con paginación por demanda. Por ende, algunos de los accesos a memoria, requerirán también accesos a una partición de swap.
 
 Para que el desarrollo del Trabajo Práctico coincida con el orden en que se dictan los temas de la materia, las diferentes entregas (de aquí en más, checkpoints) fueron cuidadosamente confeccionadas, evitando así retrabajo. Recomendamos fuertemente respetar este orden. Los requisitos indicados son los **mínimos** para considerar el checkpoint aprobado, pero es una excelente práctica continuar avanzando en caso de cumplirlos antes de la fecha límite.
 

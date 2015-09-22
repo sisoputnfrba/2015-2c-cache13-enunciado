@@ -30,6 +30,7 @@ Por último, el **Administrador de Memoria**, deberá ser capaz de recibir e int
 | `ENTRADAS_TLB`              | `4`              |
 | `TLB_HABILITADA`            | `SI`             |
 | `RETARDO_MEMORIA`           | `8`[^14]         |
+| `ALGORITMO_REEMPLAZO`       | `CLOCK-M`        |
 
 [^9] Para más información, referirse al capítulo 9 de “Fundamentos de Sistemas Operativos”, de Abraham Silberschatz.
 [^10] Si bien el Trabajo Práctico simplifica este aspecto, recuerde que las tablas de páginas se almacenan en Memoria Principal.

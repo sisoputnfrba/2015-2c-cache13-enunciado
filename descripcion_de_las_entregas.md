@@ -41,7 +41,7 @@ En cada checkpoint se explicita una serie de requisitos mínimos que debe tener 
 
 **Requisitos mínimos:**
 - El **Planificador** debe poder correr N procesos "mProc", eligiéndolos mediante un algoritmo FIFO
-- La **CPU** debe ser capaz de correr 1 *hilo*. Este *hilo* debe poder interpretar los comandos leer y finalizar. Debe poder comunicarse con el Administrador de Memoria tanto para iniciar y finalizar procesos "mProc" como para realizar las lecturas necesarias.
+- La **CPU** debe ser capaz de correr 1 *hilo*. Este *hilo* debe poder interpretar los comandos iniciar, leer y finalizar. Debe poder comunicarse con el Administrador de Memoria tanto para iniciar y finalizar procesos "mProc" como para realizar las lecturas necesarias.
 - El **Administrador de Memoria** debe ser capaz de recibir pedidos de lecturas, y directamente reenviarlos **Administrador de Swap**. También debe interpretar los pedidos para iniciar y finalizar procesos "mProc".
 - El **Administrador de Swap** debe ser capaz de recibir nuevos procesos “mProc”. También debe poder eliminar estos procesos. Ante un pedido de lectura, debe poder buscar en su partición, para devolver el contenido de página adecuado.
 
@@ -65,7 +65,7 @@ En cada checkpoint se explicita una serie de requisitos mínimos que debe tener 
 
 **Requisitos mínimos:**
 - El **Planificador** debe poder correr N procesos “mProc”, eligiendolos mediante un algoritmo Round Robin (con quantum <u>configurable</u>) o FIFO. El algoritmo a ejecutar será <u>configurable</u>, y no cambiará mientras se ejecuta el **Planificador**.
-- La **CPU** debe ser capaz de correr como N hilos. Estos hilos deberán poder interpretar todos los comandos previamente creados y además de permitir la escritura de páginas.
+- La **CPU** debe ser capaz de correr como N hilos. Estos hilos deberán poder interpretar todos los comandos previamente creados, además de permitir la escritura de páginas y entrada-salidas.
 - El **Administrador de Memoria** debe ser capaz de recibir pedidos de inicio, fin, lecturas y escrituras e interpretarlos correctamente, buscando en TLB, tabla de páginas o bien en swap, según corresponda. La TLB utilizará el algoritmo FIFO para sus reemplazos. Los procesos “mProc” tendrán una asignación a demanda de marcos con un máximo <u>configurable</u>, igual para todos. La sustitución será local. El algoritmo de reemplazo de marcos será FIFO. Por último, deberá implementar las tres señales previamente mencionadas.
 - El **Administrador de Swap** debe ser capaz de recibir pedidos de inicio, fin, lecturas y escrituras.
 
@@ -93,7 +93,7 @@ En cada checkpoint se explicita una serie de requisitos mínimos que debe tener 
 
 
 **Requisitos mínimos:**
-- El **Planificador** debe escribir en su log las siguientes métricas, cuando un proceso finaliza: tiempo de respuesta del proceso, tiempo de ejecución, tiempo de espera.
+- El **Planificador** debe escribir en su log las siguientes métricas, cuando un proceso finaliza: tiempo de respuesta del proceso (desde el punto de vista del usuario), tiempo de ejecución, tiempo de espera.
 - Cada **CPU** debe calcular y mostrar su porcentaje de uso.
 - El **Administrador de Memoria** debe incluir los algoritmos de reemplazo de marcos FIFO, LRU y Clock Modificado. Cuando finaliza un proceso “mProc”, debe mostrar la cantidad de fallos de página vs la cantidad total de páginas accedidas para este. Cada un minuto debe mostrar la tasa de aciertos de la TLB histórica (es decir, incluyendo todos los valores generados desde que el **Administrador** entró en funcionamiento). 
 - El **Administrador de Swap** debe, cada vez que un proceso “mProc” finalice, indicar la cantidad de páginas leídas y escritas por él. Además, debe ser capaz de compactar la partición cuando corresponda.

@@ -9,8 +9,9 @@ Los archivos ejecutables tendrán el siguiente formato:
 Ejemplo de programa:
 
 ```
-escribir "Hola" 1
-leer 1
-entrada-salida 5000
-finalizar
+iniciar 10;
+escribir 1 "Hola";
+leer 1;
+entrada-salida 5;
+finalizar;
 ```

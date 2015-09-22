@@ -16,7 +16,7 @@ Todos los hilos compartirán el mismo archivo log, prefijando en cada evento el 
 - Instancia de **CPU** creada/conectada al **Administrador de Memoria**, indicando el identificador de hilo **CPU** (id)
 - *Contexto de ejecución* recibido, indicando todos sus datos, y el quantum de ejecución.
 - Instrucción ejecutada, indicando PID, el valor de sus parámetros (si hubiese) y el resultado de la instrucción.
-- Ejecución de rafaga concluida, indicando PID.
+- Ejecución de ráfaga concluída, indicando PID.
 
 ## Administrador de Memoria
 
