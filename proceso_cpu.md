@@ -29,9 +29,9 @@ Una vez enviada la información mencionada anteriormente al **Planificador**, vo
 | `IP_MEMORIA`          | `192.168.101.11` |
 | `PUERTO_MEMORIA`      | `5000`           |
 | `CANTIDAD_HILOS`      | `4`              |
-| `RETARDO`             | `2`[^8]       |
+| `RETARDO`             | `1000000`[^8]    |
 
 [^5] _Hilo_ o _Thread_: traza de ejecución perteneciente a un proceso, susceptible de ser planificada por el sistema operativo. Para más información referirse a la clase teórica asociada.
 [^6] En un Sistema Operativo real, la CPU utilizaría un puntero al código en memoria. A fines de simplificar el trabajo práctico, el proceso **CPU** podrá abrir y cerrar el archivo con el código, dejando en memoria únicamente la sección de datos.
 [^7] En un Sistema Operativo real, un fallo de página devolvería una excepción que es tratada de forma especial, generando al menos una operación de entrada salida. Por dicho motivo, es habitual bloquear al proceso hasta que la página solicitada esté disponible, permitiendo que otro proceso utilice la CPU.
-[^8] Especificado en segundos
+[^8] Especificado en microsegundos. Investigar sobre la función `usleep()`.

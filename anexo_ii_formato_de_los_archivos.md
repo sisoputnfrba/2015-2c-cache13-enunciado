@@ -4,7 +4,8 @@ Los archivos ejecutables tendrán el siguiente formato:
 
 - Una cantidad de instrucciones variable
 - Terminan con la instrucción `finalizar`
-- Se coloca una instrucción por línea, finalizada con un punto y coma
+- Se coloca una instrucción por línea, finalizada con un punto y coma (`;`) y un salto de linea (`\n`)  
+- Todas las instrucciónes de los archivos serán validas.
 
 Ejemplo de programa:
 

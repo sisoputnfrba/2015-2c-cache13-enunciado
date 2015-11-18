@@ -4,7 +4,7 @@ El lenguaje deberá soportar las siguientes operaciones:
 
 ## `iniciar N`
 
-- Deberá informar al **Administrador de Memoria** que se ha iniciado un proceso “mProc” de N páginas de datos.
+- Deberá informar al **Administrador de Memoria** que se ha iniciado un proceso “mProc” de N páginas de datos _(comenzando desde la página 0)_.
 - Deberá retornar la expresión `mProc X - Iniciado` o bien `mProc X - Fallo`, dependiendo de su correcta iniciación.
 
 ## `leer N`
